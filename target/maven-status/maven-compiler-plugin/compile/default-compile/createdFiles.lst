@@ -1,0 +1,11 @@
+entity\Status.class
+entity\Pessoa.class
+controller\ProdutoController.class
+entity\Endereco.class
+entity\Funcionario.class
+entity\Produto.class
+entity\Cliente.class
+com\delivery\delivery\DeliveryApplication.class
+entity\FormaPagamento.class
+entity\ItemPedido.class
+entity\Tipo.class
