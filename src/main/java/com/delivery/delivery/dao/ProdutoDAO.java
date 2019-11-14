@@ -142,8 +142,8 @@ public class ProdutoDAO {
 		batata1.setQtd(20);
 		batata1.setObservacao("Gratinada");
 		batata1.setTipo(Tipo.BATATA);
-		batata1.setAdicionais(buscarTodosAdicionais());
-		batata1.setIngredientes(buscarTodosAdicionais());
+//		batata1.setAdicionais(buscarTodosAdicionais());
+//		batata1.setIngredientes(buscarTodosAdicionais());
 
 		Batata batata2 = new Batata();
 		batata2.setId(2);
@@ -152,8 +152,8 @@ public class ProdutoDAO {
 		batata2.setQtd(30);
 		batata2.setObservacao("Frita");
 		batata2.setTipo(Tipo.BATATA);
-		batata2.setAdicionais(buscarTodosAdicionais());
-		batata2.setIngredientes(buscarTodosAdicionais());
+//		batata2.setAdicionais(buscarTodosAdicionais());
+//		batata2.setIngredientes(buscarTodosAdicionais());
 
 		Batata batata3 = new Batata();
 		batata3.setId(3);
@@ -162,8 +162,8 @@ public class ProdutoDAO {
 		batata3.setQtd(10);
 		batata3.setObservacao("Assada");
 		batata3.setTipo(Tipo.BATATA);
-		batata3.setAdicionais(buscarTodosAdicionais());
-		batata3.setIngredientes(buscarTodosAdicionais());
+//		batata3.setAdicionais(buscarTodosAdicionais());
+//		batata3.setIngredientes(buscarTodosAdicionais());
 
 		batatas.add(batata1);
 		batatas.add(batata2);

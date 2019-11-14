@@ -2,15 +2,28 @@ package com.delivery.delivery.model;
 
 import java.util.List;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Produto {
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 	private String nome;
 	private double preco;
-	private List<Produto> ingredientes;
-	private List<Produto> adicionais;
+	
+//	@ManyToMany(cascade = CascadeType.ALL)
+//	private List<Produto> ingredientes;
+	
+//	@ManyToMany(cascade = CascadeType.ALL)
+//	private List<Produto> adicionais;
 	private int qtd;
 	private String observacao;
+		
 	private Tipo tipo;
 
 	public Produto() {
@@ -22,8 +35,8 @@ public class Produto {
 		this.id = id;
 		this.nome = nome;
 		this.preco = preco;
-		this.ingredientes = ingredientes;
-		this.adicionais = adicionais;
+//		this.ingredientes = ingredientes;
+//		this.adicionais = adicionais;
 		this.qtd = qtd;
 		this.observacao = observacao;
 		this.tipo = tipo;
@@ -53,21 +66,21 @@ public class Produto {
 		this.preco = preco;
 	}
 
-	public List<Produto> getIngredientes() {
-		return ingredientes;
-	}
-
-	public void setIngredientes(List<Produto> ingredientes) {
-		this.ingredientes = ingredientes;
-	}
-
-	public List<Produto> getAdicionais() {
-		return adicionais;
-	}
-
-	public void setAdicionais(List<Produto> adicionais) {
-		this.adicionais = adicionais;
-	}
+//	public List<Produto> getIngredientes() {
+//		return ingredientes;
+//	}
+//
+//	public void setIngredientes(List<Produto> ingredientes) {
+//		this.ingredientes = ingredientes;
+//	}
+//
+//	public List<Produto> getAdicionais() {
+//		return adicionais;
+//	}
+//
+//	public void setAdicionais(List<Produto> adicionais) {
+//		this.adicionais = adicionais;
+//	}
 
 	public int getQtd() {
 		return qtd;
@@ -93,10 +106,10 @@ public class Produto {
 		this.tipo = tipo;
 	}
 
-	@Override
-	public String toString() {
-		return "Produto [id=" + id + ", nome=" + nome + ", preco=" + preco + ", ingredientes=" + ingredientes
-				+ ", adicionais=" + adicionais + ", qtd=" + qtd + ", observacao=" + observacao + ", tipo=" + tipo + "]";
-	}	
+//	@Override
+//	public String toString() {
+//		return "Produto [id=" + id + ", nome=" + nome + ", preco=" + preco + ", ingredientes=" + ingredientes
+//				+ ", adicionais=" + adicionais + ", qtd=" + qtd + ", observacao=" + observacao + ", tipo=" + tipo + "]";
+//	}	
 	
 }
